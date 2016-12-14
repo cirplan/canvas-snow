@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>canvas snow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #6b92b9;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="snow.js"></script>
+    <script>
+        window.onload = function () {
+            new Snow({
+                el: 'canvas'
+            })
+        }
+    </script>
+</body>
+</html>
